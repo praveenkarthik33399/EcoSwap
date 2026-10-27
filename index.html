@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173d30">
+  <meta name="description" content="Discover pre-loved treasures and give good things a second life with EcoSwap.">
+  <title>EcoSwap — Good Things Deserve Another Life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span>✳</span> Good finds. Smaller footprints. Better stories.
+    <span class="announcement-right">THE CIRCULAR WAY TO SHOP ↗</span>
+  </div>
+
+  <header class="header">
+    <a href="#" class="brand" aria-label="EcoSwap home">
+      <span class="brand-mark">e<span>✳</span></span>
+      <span>eco<span class="brand-light">swap</span></span>
+    </a>
+
+    <nav class="nav">
+      <a href="#explore">Explore</a>
+      <a href="#impact">Our impact</a>
+      <a href="#how">How it works</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="wishlistNav" aria-label="Open wishlist">♡ <span id="wishCount">0</span></button>
+      <button class="button button-dark button-small" id="loginOpen">Sign in ↗</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> THE FUTURE IS PRE-LOVED</div>
+        <h1>Good things<br>deserve <em>another</em><br><span class="life-line">life.</span><span class="hero-star">✳</span></h1>
+        <p class="hero-description">
+          Find pieces with a past. Give them a future.
+          Shop thoughtfully chosen secondhand treasures, all in one place.
+        </p>
+        <div class="hero-actions">
+          <a href="#explore" class="button button-lime">Explore the finds <span>↗</span></a>
+          <button class="text-button" id="heroSell">Have something to sell? <span>→</span></button>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack">
+            <span>🌱</span><span>🧡</span><span>🌍</span>
+          </div>
+          <div><strong>A better way to shop.</strong><small>Every pre-loved find makes a difference.</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-main">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1100&q=85" alt="Curated neutral clothing ready for a second life">
+          <span class="image-label">THE RE-WEAR EDIT <span>01 / 04</span></span>
+        </div>
+        <div class="floating-note note-top"><span class="note-icon">✳</span><div><strong>Less waste.</strong><small>More wonderful.</small></div></div>
+        <div class="floating-note note-bottom"><span class="note-icon">↗</span><div><strong>Little finds,</strong><small>big second chances.</small></div></div>
+        <div class="hero-orbit">BUY BETTER · LIVE LIGHTER · REPEAT ·</div>
+      </div>
+      <div class="hero-bottom-label"><span>01 — CONSCIOUS COMMERCE</span><span>MADE FOR A NEW KIND OF SHOPPER ↓</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Marketplace values">
+      <div>PRE-LOVED, NEVER LESS <span>✳</span> FIND YOUR NEXT FAVOURITE <span>✳</span> GOOD FOR YOU, GENTLER ON EARTH <span>✳</span> PRE-LOVED, NEVER LESS <span>✳</span></div>
+    </section>
+
+    <section class="category-section section-wrap">
+      <div class="section-heading">
+        <div><span class="eyebrow">A LITTLE OF EVERYTHING</span><h2>Find your <em>kind</em> of good.</h2></div>
+        <a href="#explore" class="text-button">All collections ↗</a>
+      </div>
+      <div class="category-grid">
+        <button class="category-tile category-fashion" data-category="Fashion">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="">
+          <span class="category-number">01 / STYLE</span><span class="category-title">Wear it again <b>↗</b></span>
+        </button>
+        <button class="category-tile category-tech" data-category="Electronics">
+          <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="">
+          <span class="category-number">02 / TECH</span><span class="category-title">Tech, re-loved <b>↗</b></span>
+        </button>
+        <button class="category-tile category-books" data-category="Books">
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=80" alt="">
+          <span class="category-number">03 / STORIES</span><span class="category-title">Read another life <b>↗</b></span>
+        </button>
+        <button class="category-tile category-home" data-category="Home">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="">
+          <span class="category-number">04 / LIVING</span><span class="category-title">Make room for good <b>↗</b></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="products-section section-wrap" id="explore">
+      <div class="section-heading product-heading">
+        <div><span class="eyebrow">THE GOOD-FIND DEPARTMENT</span><h2>Objects with <em>another</em> story.</h2><p class="muted">Your next favourite thing is already out there.</p></div>
+        <button class="button button-dark" id="sellOpen">＋ List an item</button>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search finds, brands, little treasures…" aria-label="Search products"><kbd>↵</kbd></label>
+        <select id="sortSelect" aria-label="Sort products">
+          <option value="featured">Featured finds</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="newest">Recently listed</option>
+        </select>
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-chips" id="categoryFilters">
+          <button class="chip active" data-category="All">Everything <span>✳</span></button>
+          <button class="chip" data-category="Fashion">Fashion</button>
+          <button class="chip" data-category="Electronics">Electronics</button>
+          <button class="chip" data-category="Books">Books</button>
+          <button class="chip" data-category="Furniture">Furniture</button>
+          <button class="chip" data-category="Home">Home</button>
+          <button class="chip" data-category="Other">Other</button>
+        </div>
+        <select id="conditionSelect" aria-label="Filter by condition">
+          <option value="All">Any condition</option>
+          <option>Like New</option><option>Good</option><option>Fair</option>
+        </select>
+      </div>
+
+      <div class="results-line"><span id="resultCount">Discovering lovely things…</span><span>EVERY ITEM DESERVES A SECOND CHANCE ✳</span></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state hidden" id="emptyState"><div>✳</div><h3>No finds just yet.</h3><p>Try a different search or explore another category.</p><button class="button button-dark" id="resetFilters">Clear filters</button></div>
+    </section>
+
+    <section class="impact-section" id="impact">
+      <div class="impact-copy">
+        <span class="eyebrow eyebrow-light">SMALL CHOICES. BIGGER PICTURE.</span>
+        <h2>Good for your<br>space. <em>Gentler</em><br>on our place.</h2>
+        <p>Buying secondhand helps keep useful things in circulation. One thoughtful find at a time, we can make using more and wasting less feel natural.</p>
+        <a href="#how" class="button button-lime">The EcoSwap way ↗</a>
+      </div>
+      <div class="impact-side">
+        <div class="impact-stamp">LIVE<br>LIGHTER<br><span>✳</span></div>
+        <div class="impact-stat"><strong id="impactListings">12</strong><span>GOOD THINGS LOOKING FOR A NEW HOME</span></div>
+        <div class="impact-stat"><strong>1</strong><span>PLANET WORTH CARING FOR</span></div>
+        <p class="impact-disclaimer">Listing count updates from this demo marketplace. Environmental benefits vary by item; figures shown here are illustrative, not measured impact data.</p>
+      </div>
+    </section>
+
+    <section class="how-section section-wrap" id="how">
+      <div class="section-heading"><div><span class="eyebrow">NO COMPLICATED STUFF</span><h2>Three steps to <em>better.</em></h2></div><span class="how-spark">✳</span></div>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">01</span><div class="step-illustration">⌕</div><h3>Find your thing.</h3><p>Browse unique pre-loved pieces and discover something with character.</p></article>
+        <article class="step-card step-highlight"><span class="step-number">02</span><div class="step-illustration">↗</div><h3>Give it another life.</h3><p>Choose something useful instead of buying new. Let the good stuff keep going.</p></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-illustration">✳</div><h3>Pass the good on.</h3><p>List things you no longer need and help someone else find their next favourite.</p></article>
+      </div>
+    </section>
+
+    <section class="sell-banner section-wrap">
+      <div><span class="eyebrow">YOUR CLOSET CALLED.</span><h2>Ready to pass<br>the <em>good</em> on?</h2><p>Your once-loved things might be somebody's new favourite.</p></div>
+      <button class="button button-dark button-large" id="sellBottom">Give it a new home ↗</button>
+      <span class="banner-flower">✳</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="brand brand-footer"><span class="brand-mark">e<span>✳</span></span><span>eco<span class="brand-light">swap</span></span></a>
+    <p>Less new. More you. A better life for good things.</p>
+    <div><a href="#explore">Explore</a><a href="#impact">Our impact</a><a href="#how">How it works</a></div>
+    <span class="footer-bottom">MADE WITH PURPOSE ✳ ECO SWAP DEMO © 2026</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Product detail -->
+  <dialog class="modal" id="detailModal">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div id="detailContent"></div>
+  </dialog>
+
+  <!-- Authentication demo -->
+  <dialog class="modal auth-modal" id="authModal">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div class="modal-kicker">YOUR SECOND-LIFE SOCIETY ✳</div>
+    <h2 id="authTitle">Welcome <em>back.</em></h2>
+    <p class="muted">A good find is always better when it's yours.</p>
+    <div class="auth-tabs"><button class="active" data-auth="login">Sign in</button><button data-auth="register">Create account</button></div>
+    <form id="authForm">
+      <label id="nameField" class="field hidden">Your name<input name="name" autocomplete="name" placeholder="What should we call you?"></label>
+      <label class="field">Email address<input type="email" name="email" required autocomplete="email" placeholder="you@example.com"></label>
+      <label class="field">Password<input type="password" name="password" required minlength="6" autocomplete="current-password" placeholder="At least 6 characters"></label>
+      <p class="form-error" id="authError"></p>
+      <button class="button button-dark button-full" type="submit" id="authSubmit">Sign in ↗</button>
+    </form>
+    <p class="fine-print">Demo only: account details stay in this browser. Do not use a real password.</p>
+  </dialog>
+
+  <!-- Sell form -->
+  <dialog class="modal sell-modal" id="sellModal">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div class="modal-kicker">LET THE GOOD STUFF GO ON ✳</div>
+    <h2>List a little <em>lovely.</em></h2>
+    <p class="muted">Tell the next owner why this item deserves another life.</p>
+    <form id="sellForm">
+      <label class="field">Item name<input name="name" required maxlength="70" placeholder="e.g. Classic denim jacket"></label>
+      <div class="field-row">
+        <label class="field">Category<select name="category" required><option>Fashion</option><option>Electronics</option><option>Books</option><option>Furniture</option><option>Home</option><option>Other</option></select></label>
+        <label class="field">Condition<select name="condition" required><option>Like New</option><option>Good</option><option>Fair</option></select></label>
+      </div>
+      <div class="field-row">
+        <label class="field">Price (₹)<input name="price" type="number" min="50" max="1000000" required placeholder="850"></label>
+        <label class="field">Location<input name="location" required maxlength="60" placeholder="Your city"></label>
+      </div>
+      <label class="field">Image URL (optional)<input name="image" type="url" placeholder="https://example.com/item.jpg"></label>
+      <label class="field">The story behind it<textarea name="description" required maxlength="400" rows="3" placeholder="Share details, size, condition or a little story…"></textarea></label>
+      <div class="commission-preview"><span>Seller commission preview · 10%</span><strong id="commissionValue">₹0</strong><small>Estimated amount after commission: <b id="sellerPayout">₹0</b>. Illustrative only; no money is collected.</small></div>
+      <p class="form-error" id="sellError"></p>
+      <button class="button button-dark button-full" type="submit">Publish demo listing ↗</button>
+    </form>
+  </dialog>
+
+  <script>
+    // All interactions are implemented in script.js.
+  </script>
+</body>
+</html>
